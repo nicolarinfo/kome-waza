@@ -3,14 +3,31 @@
 header {
   @include flex-center;
   flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    height: 100px;
+  }
 
   ul {
     display: flex;
-    flex-flow: row wrap;
-    gap: 12px;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px
   }
-  a {
-    color: $text-color;
+  .header__link {
+    width: 100px;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 4px;
+
+    &:hover {
+      color: $hover-color;
+    }
   }
+  
 }

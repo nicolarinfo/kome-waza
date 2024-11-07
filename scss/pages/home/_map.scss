@@ -1,0 +1,14 @@
+@use "../../abstracts/index" as *;
+
+.map {
+    height: 100vh;
+    @media (min-width: $desktop-breakpoint) {
+        height: 500px;
+        margin-bottom: 0.5rem;
+        
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}

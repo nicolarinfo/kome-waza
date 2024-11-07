@@ -8,6 +8,7 @@
 body {
   font-family: Roboto;
   line-height: 1.6;
+  color: #003e52;
 }
 
 a {
@@ -18,18 +19,239 @@ li {
   list-style: none;
 }
 
-header {
+img {
+  max-width: 100%;
+}
+
+footer {
+  height: 200px;
+  background-color: #003e52;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+footer h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+footer p {
+  line-height: 1.2;
+  font-size: 0.75rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 578px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    height: 100px;
+  }
+}
 header ul {
   display: flex;
-  flex-flow: row wrap;
-  gap: 12px;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
-header a {
-  color: #003e52;
+header .header__link {
+  width: 100px;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 4px;
+}
+header .header__link:hover {
+  color: #6cadc2;
+}
+
+.hero {
+  height: 100vh;
+}
+.hero img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 578px) {
+  .introduction {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .introduction .hero__content {
+    align-self: flex-start;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    max-width: 450px;
+  }
+  .introduction .hero__content h1 {
+    font-weight: 500;
+    text-align: right;
+  }
+  .introduction .hero__content h2 {
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .introduction .hero__content p {
+    text-align: right;
+    margin-top: 2rem;
+  }
+}
+.introduction__title {
+  font-weight: 500;
+  text-align: center;
+}
+.introduction__subtitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.introduction__description {
+  text-align: center;
+}
+@media (min-width: 578px) {
+  .introduction__description {
+    text-align: right;
+  }
+}
+
+.slider-image {
+  height: 100vh;
+}
+@media (min-width: 578px) {
+  .slider-image {
+    height: auto;
+  }
+}
+.slider-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 578px) {
+  .slider-image img {
+    width: 100vw;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.poke-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 578px) {
+  .poke-list {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+.poke-list h2 {
+  margin-top: 1.25rem;
+  align-self: center;
+  text-align: center;
+  width: 80%;
+}
+.poke-list h2::after {
+  content: "";
+  display: block;
+  margin-top: 0.75rem;
+  border: 1px solid #003e52;
+  width: 100%;
+}
+@media (min-width: 578px) {
+  .poke-list h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .poke-list h2::after {
+    content: "";
+    display: block;
+    margin-top: 3rem;
+    border: 1px solid #003e52;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.poke-list h3 {
+  margin-top: 1.25rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media (min-width: 578px) {
+  .poke-list h3 {
+    width: 30%;
+  }
+}
+.poke-list p {
+  text-align: left;
+  font-size: 0.75rem;
+  width: 95%;
+  padding: 0 1rem;
+}
+@media (min-width: 578px) {
+  .poke-list p {
+    width: 30%;
+  }
+}
+
+.outro {
+  height: 70vh;
+  margin: 2rem 0;
+}
+@media (min-width: 578px) {
+  .outro {
+    height: 90vh;
+  }
+}
+.outro img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70% 90%;
+     object-position: 70% 90%;
+}
+@media (min-width: 578px) {
+  .outro img {
+    width: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.map {
+  height: 100vh;
+}
+@media (min-width: 578px) {
+  .map {
+    height: 500px;
+    margin-bottom: 0.5rem;
+  }
+}
+.map iframe {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

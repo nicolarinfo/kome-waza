@@ -1,0 +1,20 @@
+@use "../../abstracts/index" as *;
+
+.slider-image {
+    height: 100vh;
+    @media (min-width: $desktop-breakpoint) {
+        height: auto;   
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+
+        @media (min-width: $desktop-breakpoint) {
+            width: 100vw;
+            height: auto;
+            object-fit: cover;
+            
+        }
+    }
+}
