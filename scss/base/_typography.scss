@@ -1,0 +1,14 @@
+@use "../abstracts/index" as *;
+
+body {
+  font-family: Roboto;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
